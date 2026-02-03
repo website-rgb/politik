@@ -1,0 +1,178 @@
+<!doctype html>
+
+<html lang="de">
+  <head>
+    <title>Wirtschaftspolitik</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <div class="header">
+      <p class="descr">Wirtschaftspolitiken</p>
+    </div>
+    <h1>Wilkommen auf dieser Webseite!</h1>
+    <p class="p">
+      Auf dieser Webseite findest du Informationen zu verschiedenen
+      Wirtschaftspolitiken wie Kapitalismus, Sozialismus und Kommunismus.
+      Erfahre die Grundlagen, Unterschiede und zentrale Ideen der wichtigsten
+      wirtschaftlichen Systeme.
+    </p>
+    <hr />
+    <h1>Nach Politiken suchen</h1>
+    <div class="container">
+      <input
+        class="input1"
+        list="sections"
+        id="search"
+        placeholder="Suchen..." />
+      <datalist id="sections">
+        <option value="Kapitalismus"></option>
+        <option value="Sozialismus"></option>
+        <option value="Kommunismus"></option>
+      </datalist>
+      <script>
+        const sections = {
+          Kapitalismus: "section1",
+          Sozialismus: "section2",
+          Kommunismus: "section3",
+        };
+        const input = document.getElementById("search");
+        input.addEventListener("keydown", (e) => {
+          if (e.key === "Enter") {
+            const id = sections[input.value];
+            if (id)
+              document
+                .getElementById(id)
+                .scrollIntoView({ behavior: "smooth" });
+          }
+        });
+        input.addEventListener("change", () => {
+          const id = sections[input.value];
+          if (id)
+            document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+        });
+      </script>
+    </div>
+    <hr />
+    <h1 id="section1">Kapitalismus</h1>
+    <p class="p">
+      Der Kapitalismus ist ein wirtschaftliches und gesellschaftliches System,
+      das auf Privatbesitz, freiem Wettbewerb und dem Streben nach Gewinn
+      basiert. Im Zentrum steht die Idee, dass Einzelpersonen und Unternehmen
+      die Freiheit haben, Produktion, Handel und Investitionen selbst zu
+      bestimmen, ohne dass der Staat umfassend eingreift. Die Preise für Waren
+      und Dienstleistungen werden hauptsächlich durch Angebot und Nachfrage auf
+      dem Markt reguliert, was bedeutet, dass der Preis steigt, wenn ein Gut
+      knapp ist, und fällt, wenn es im Überfluss vorhanden ist. Kapitalismus
+      fördert Innovation und wirtschaftliches Wachstum, da Unternehmen neue
+      Produkte entwickeln, um Kunden zu gewinnen und Profit zu maximieren.
+      Gleichzeitig kann er aber auch soziale Ungleichheit verstärken, da
+      Wohlstand und Ressourcen ungleich verteilt sein können. Kritiker weisen
+      darauf hin, dass Kapitalismus manchmal zu Monopolen, Umweltproblemen oder
+      Ausbeutung führen kann, während Befürworter seine Effizienz,
+      Innovationskraft und individuelle Freiheit hervorheben. Historisch war der
+      Kapitalismus eng mit der industriellen Revolution verbunden und prägt
+      heute nahezu alle modernen Volkswirtschaften, wenn auch in
+      unterschiedlichen Formen, von freiem Markt über soziale Marktwirtschaft
+      bis hin zu liberalen Kapitalmodellen.
+    </p>
+    <br />
+    <p class="p">Bekannte Personen:</p>
+    <div class="container">
+      <img class="img1" loading="lazy" src="Adamsmith.jpg" />
+    </div>
+    <p class="p">
+      Adam Smith war ein schottischer Ökonom, bekannt als Vater der modernen
+      Wirtschaftstheorie. Er betonte freie Märkte, Wettbewerb und Privatbesitz.
+      In seinem Buch „Der Wohlstand der Nationen“ beschreibt er, wie Märkte ohne
+      starken Staat funktionieren können.
+    </p>
+    <hr />
+    <h1 id="section2">Sozialismus</h1>
+    <p class="p">
+      Der Sozialismus ist ein wirtschaftliches und politisches System, das
+      Gleichheit, Umverteilung von Ressourcen und das Gemeinwohl über
+      individuelles Gewinnstreben stellt. Anders als im Kapitalismus spielt
+      nicht allein der Markt die entscheidende Rolle, sondern der Staat oder die
+      Gemeinschaft kann die Wirtschaft lenken, um soziale Gerechtigkeit zu
+      fördern. Sozialistische Ideen zielen darauf ab, Armut zu verringern,
+      Chancen für alle zu schaffen und die Kluft zwischen Arm und Reich zu
+      verkleinern. Sozialismus existiert in vielen Varianten. In einigen Ländern
+      gibt es demokratischen Sozialismus, bei dem demokratische Strukturen
+      bestehen bleiben und der Staat wirtschaftliche Eingriffe nutzt, um soziale
+      Programme zu finanzieren. In anderen Varianten ist der Staat stärker in
+      die Wirtschaft eingebunden, beispielsweise durch staatliche Kontrolle von
+      Schlüsselindustrien oder umfassende Planwirtschaft. Sozialismus hat
+      historische Wurzeln im 19. Jahrhundert, als Theoretiker wie Karl Kautsky
+      oder Eduard Bernstein die sozialen Missstände der industriellen Revolution
+      kritisierten und Alternativen zu rein kapitalistischen Systemen
+      entwickelten.
+    </p>
+    <hr />
+    <h1 id="section3">Kommunismus</h1>
+    <p class="p">
+      Der Kommunismus ist eine radikalere Form des Sozialismus und zielt auf
+      eine klassenlose Gesellschaft ohne Privateigentum an Produktionsmitteln
+      ab. Im kommunistischen Modell sollen alle wirtschaftlichen Ressourcen
+      gemeinschaftlich besessen und von der Gesellschaft verwaltet werden. Die
+      Idee ist, dass durch gemeinsame Planung und gerechte Verteilung soziale
+      Ungleichheit vollständig beseitigt wird. Historisch ist der Kommunismus
+      stark mit den Theorien von Karl Marx und Friedrich Engels verbunden, die
+      in ihren Schriften die Kritik am Kapitalismus darlegten und den Übergang
+      zu einer Gesellschaft ohne Klassen beschrieben. Kommunistische Bewegungen
+      haben im 20. Jahrhundert in verschiedenen Ländern politische Macht
+      erlangt, wobei die praktische Umsetzung oft stark von den ursprünglichen
+      Ideen abwich. Revolutionäre wie Che Guevara gelten als Symbolfiguren des
+      Kampfes für soziale Gleichheit; er kämpfte in Lateinamerika aktiv gegen
+      Unterdrückung und Ungerechtigkeit. Der Kommunismus diskutiert nicht nur
+      wirtschaftliche Strukturen, sondern auch ethische und politische Fragen,
+      wie Machtverteilung, individuelle Freiheit und gesellschaftliche
+      Verantwortung.
+    </p>
+    <br />
+    <p class="p">Bekannte Personen:</p>
+    <div class="container">
+      <img
+        loading="lazy"
+        class="img2"
+        src="karl-marx-ensemble-1396080_1280.jpg" />
+    </div>
+    <p class="p">
+      Karl Marx war ein deutscher Philosoph, Ökonom und Revolutionär. Er
+      entwickelte die Theorie des historischen Materialismus und beschrieb, wie
+      Klassenkampf die Geschichte prägt. Marx legte die theoretische Grundlage
+      für den Kommunismus.
+    </p>
+    <p class="p">---</p>
+    <div class="container">
+      <img loading="lazy" class="img1" src="che-guevara-62918_1280.jpg" />
+    </div>
+    <p class="p">
+      Che Guevara war ein argentinischer Revolutionär und Symbol des Kampfes für
+      soziale Gerechtigkeit. Er kämpfte in Kuba und Lateinamerika gegen
+      Unterdrückung und setzte sich für Gleichheit und kollektive Ideale ein.
+    </p>
+    <hr />
+    <h1>Quellen:</h1>
+    <p class="p">
+      Wikipedia
+      <br />
+      Google
+      <br />
+      Pixaby
+    </p>
+    <hr />
+    <p class="p">Information:</p>
+    <p class="p">
+      Manche Personen wurden weggelassen wegen nicht vorhandener Lizenzfreier
+      Bilder
+    </p>
+    <hr />
+  </body>
+</html>

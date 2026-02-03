@@ -1,0 +1,104 @@
+html {
+  background-color: rgb(216, 255, 255);
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  animation-name: header;
+  animation-duration: 1s;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.descr {
+  font-family: Inter, sans-serif;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.p {
+  font-family: Inter, sans-serif;
+  text-align: center;
+  font-weight: 200;
+  font-size: 20px;
+  animation-name: txt;
+  animation-duration: 1s;
+}
+
+h1 {
+  text-align: center;
+  font-family: Inter, sans-serif;
+  font-weight: 300;
+  animation-name: txt;
+  animation-duration: 1s;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  width: 100%;
+  animation-name: txt;
+  animation-duration: 1s;
+  background: linear-gradient(to right, rgb(25, 126, 117), aqua);
+}
+
+.input1 {
+  border: 3px white solid;
+  background: none;
+  color: white;
+  width: fit-content;
+  display: flex;
+  text-align: center;
+  animation-name: txt;
+  animation-duration: 1s;
+}
+
+.container {
+  display: flex;
+  height: auto;
+  justify-content: center;
+  animation-name: txt;
+  animation-duration: 1s;
+}
+
+.img1 {
+  height: auto;
+  width: 200px;
+  animation-name: txt;
+  animation-duration: 1s;
+}
+
+.img2 {
+  height: auto;
+  width: 400px;
+  animation-name: txt;
+  animation-duration: 1s;
+}
+
+@keyframes txt {
+  0% {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes header {
+  0% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
